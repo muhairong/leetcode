@@ -66,3 +66,23 @@ they have constant-time complexity
 ### stack
 1. push a value onto the top of a stack, pop an element from the pop of a stack, view the values at the top of a stack, check the number of elements, and test wheter the stack is empty
 2. empty(), size(), top(), push(x), pop()
+
+
+## Associative Containers
+assiciates a value with a key and uses the key to find the value
+provides rapid access to its elements
+
+### set/multiset
+- set
+  - keys are unique (means there are no more than one instance of a key in a set)
+  - value is the key
+- multiset
+  - have more than one value with the same key
+
+### map/multimap
+- map
+  - the value type is different from the key type
+  - keys are unique
+  - with only one type per key
+- multimap
+  - one key can be associated with multiple value
