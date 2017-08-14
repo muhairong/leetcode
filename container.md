@@ -74,8 +74,17 @@ provides rapid access to its elements
 
 ### set/multiset
 - set
+  - reversible
+  - sorted
   - keys are unique (means there are no more than one instance of a key in a set)
   - value is the key
+  - optional second argument -- to indicate a comparison function or object to order the key
+  - set_union()
+    - set_union(A.begin(), A.end(), B.begin(), B.end(), ostream_iterator<string, char> out(cout, " "));
+    - set_union(A.begin(), A.end(), B.begin(), B.end(), insert_iterator<set<string>>(C, C.begin());
+  - set_intersection(), set_difference()
+  - lower_bound(), upper_bound()
+  
 - multiset
   - have more than one value with the same key
 
@@ -86,3 +95,12 @@ provides rapid access to its elements
   - with only one type per key
 - multimap
   - one key can be associated with multiple value
+  - reversible
+  - sorted
+  - optional second argument -- to indicate a comparison function or object to order the key
+  - STL uses a pair<class T, class U> template class for storing two kinds of values in a single object
+    - value type: pair<const keytype, datatype>
+    - access the two components by using the first and second members
+  - count(key) return the number of items that have this key
+  - equal_range(key) return iterators representing the range matching this key
+    - package the return value into a pair object, two arguments are iterators
