@@ -12,7 +12,7 @@
 ### INT_MAX and INT_MIN
 - INT_MAX: 2^31-1
 - INT_MIN: -2^31
-- note that INT_MIN can't change to be a positive integer by multiplying -1, because it will overflow! Therefore, in determining the boundary conditions, we must pay special attention to it！
+- ![#1589F0](https://placehold.it/15/1589F0/000000?text=+) `note that INT_MIN can't change to be a positive integer by multiplying -1, because it will overflow! Therefore, in determining the boundary conditions, we must pay special attention to it！`
 - some equation:
   - INT_MAX + 1 = INT_MIN
   - INT_MIN - 1 = INT_MAX
